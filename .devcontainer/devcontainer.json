@@ -1,0 +1,6 @@
+{
+  "name": "PNPM",
+  "build": { "dockerfile": "Dockerfile" },
+  "remoteUser": "vscode",
+  "postCreateCommand": "pnpm install-completion zsh"
+}
