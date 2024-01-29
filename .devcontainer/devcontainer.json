@@ -1,6 +1,29 @@
 {
   "name": "PNPM",
   "build": { "dockerfile": "Dockerfile" },
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Set *default* container specific settings.json values on container create.
+      "settings": {
+        "html.format.templating": true
+      },
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        // "dbaeumer.vscode-eslint",
+
+        // "bradlc.vscode-tailwindcss",
+        // "csstools.postcss",
+
+        // "davidanson.vscode-markdownlint",
+        // "streetsidesoftware.code-spell-checker",
+        // "naumovs.color-highlight",
+        // "GitHub.vscode-pull-request-github",
+        // "eamodio.gitlens"
+      ]
+    }
+  },
   "remoteUser": "vscode",
   "postCreateCommand": "pnpm install-completion zsh"
 }
