@@ -6,6 +6,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 # RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 ARG USER=vscode
+RUN usermod -s /bin/zsh vscode
+
 USER ${USER}
 ARG HOME=/home/${USER}
 WORKDIR ${HOME}

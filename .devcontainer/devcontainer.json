@@ -6,9 +6,7 @@
     // Configure properties specific to VS Code.
     "vscode": {
       // Set *default* container specific settings.json values on container create.
-      "settings": {
-        "html.format.templating": true
-      },
+      "settings": {},
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
         // "dbaeumer.vscode-eslint",
@@ -16,6 +14,7 @@
         // "bradlc.vscode-tailwindcss",
         // "csstools.postcss",
 
+        "esbenp.prettier-vscode"
         // "davidanson.vscode-markdownlint",
         // "streetsidesoftware.code-spell-checker",
         // "naumovs.color-highlight",
